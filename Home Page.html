@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div id="navigationBar">
+		<div class="row">
+			<div class="columnRight c8"></div> <!-- navbar options are floated right - so it's upside down lmao !-->
+			<div class="navigationBarOption">
+				For Judges
+				<div class="navigationBarDropdown hidden">
+					<li><a href="http://2018.igem.org/Team:UMaryland/Sitemap">Sitemap</a></li>
+					<li><a href="http://igem.org/2018_Judging_Form?team=UMaryland">Judging Form</a></li>
+				</div>
+			</div>
+			
+			<div class="navigationBarOption"><!-- lmao do we even have a team page !-->
+				Team
+				<div class="navigationBarDropdown hidden">
+					<li><a href="http://2018.igem.org/Team:UMaryland/Team">Our Team</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Acknowledgements">Acknowledgements</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Sponsors">Sponsors</a></li>
+					<li class="navigationBarDropdownDivider"></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Notebook">Notebook</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Protocols">Protocols</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Safety">Safety</a></li>
+				</div>
+			</div> 
+			<div class="navigationBarOption"><!-- stole this idea from W&M (thx) !-->
+				<a href="http://2018.igem.org/Team:UMaryland/Engagement">Engagement</a>
+				<div class="navigationBarDropdown hidden">
+					<li><a href="http://2018.igem.org/Team:UMaryland/Human_Practices">Human Practices</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Public_Engagement">Outreach</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Collaboration">Collaboration</a></li>
+					<li class="navigationBarDropdownDivider"></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/meetup">2018 Mid-Atlantic Meetup</a></li>
+				</div>
+			</div> 
+			<div class="navigationBarOption"><!-- ripperino our basic part qq !-->
+				<a href="http://2018.igem.org/Team:UMaryland/Parts">Parts</a>
+			</div> 
+			<div class="navigationBarOption">
+				<a href="http://2018.igem.org/Team:UMaryland/Description">Project</a>
+				<div class="navigationBarDropdown hidden">
+					<li><a href="http://2018.igem.org/Team:UMaryland/Design">Design</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Hardware">Hardware</a></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Modeling">Modeling</a></li>
+					<li class="navigationBarDropdownDivider"></li>
+					<li><a href="http://2018.igem.org/Team:UMaryland/Results">Results</a></li>
+				</div>
+			</div>
+			<div class="navigationBarOption">
+				<a href="http://2018.igem.org/Team:UMaryland">Home</a>
+			</div>
+		</div>
+	</div>
+	<div id="navigationBarPlaceholder"></div> <!-- Gives appropriate spacing from the navbar !-->
+	<div id="homePageTitle"> <!-- section 1 !-->
+		<div class="row">
+			<div id="PETNETLOGO" class="columnLeft c33">
+				<img src="http://2018.igem.org/wiki/images/8/8d/T--UMaryland--PETNETshirtmonochrome.png" alt="logo" style="float: left; width: 100%">
+			</div>
+			<div id="inBetweenLogoTitle" class="columnLeft c5">				
+				<img src="http://2018.igem.org/wiki/images/8/81/T--UMaryland--in_between.png" alt="logo" style="float: left; width: 100%">
+			</div>
+			<div id="homePageTitleText" class="columnLeft c45">
+				<div class="homeTitleContainer">
+					<div class="titleText">PET NET</div>
+					<div class="subtitleText">A Scalable Approach for Plastic Bioremediation</div>
+				</div>
+				<div class="homeTitleContainer" style="margin-top: 50px;">
+					<div class="subtitleText">UMaryland iGEM 2018</div>
+				</div>
+			</div>
+		</div>
+		<div id="homeTitleBorder"></div>
+	</div>
+	<div>
+		yeah im gonna put some stuff here later hopefully
+	</div>
+	<div id="onTopOfCopystrike"></div> <!-- Spacing between meat and copystrike !-->
+	<div id="copyStrike">
+		<div class="row">
+			<div class="columnLeft c16"></div>
+			<div class="columnLeft c22" id="copyStrikeContact">
+				<p>Contact Us</p>
+				<p><a href="mailto:umarylandigem@gmail.com">umarylandigem@gmail.com</a></p>
+				<p>Biology - Psychology Building</p>
+				<p>4094 Campus Dr, College Park, MD 20742</p>
+			</div>
+			<div class="columnLeft c22" id="copyStrikeCopystrike">
+				<br><p>© University of Maryland 2018</p>
+			</div>
+			<div class="columnLeft c22" id="copyStrikeFollow">
+				<p>Follow Us</p>
+				<a href ="https://www.facebook.com/UMarylandiGEM/"><img src="facebook.png" style="height: 20px;" alt="Facebook"></a>
+				<a href= "https://www.instagram.com/umarylandigem"><img src="instagram.png" style="height: 20px; padding-left: 5px;" alt="Instagram"></a>
+				<!-- 내일이올걸아는데난핸드폰을놓지못해잠은올생각이없대yeah다시인스타그램인스타그램하네잘난사람많고많지누군어디를놀러갔다지좋아요는안눌렀어나만이런것같아서저기인스타그램인스타그램속엔문제야문제온세상속에똑같은사랑노래가와닿지못해나의밤속엔생각이너무많네뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜복잡해틈만나면바뀌는게관둘래이놈의정보화시대단단히잘못됐어요즘은아는게더괴로운것같은데가면갈수록너무어려워나만이런건지클럽말고뭐영화말고뭐없나하다결국동네내맘에는구멍이있어그건뭘로도못채우는것yeah난지금가라앉는중인걸네모난바다속에서문제야문제온세상속에똑같은사랑노래가와닿지못해나의밤속엔생각이너무많네뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜All night, ooh그렇게시간낭비를하네네인스타그램속에서Lonely lonely so lonely원래이리도힘든가요No way no way이피드속엔나완다른세상뿐인데부질없이올려놓은사진뒤에가려진내마음을아는이없네난또헤메이네저인스타그램속에서그래너는요즘어때잠못자는건여전해자른단발이참예쁘던데좋아요는안눌렀어조금웃긴것같아서뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜뚜루뚜뚜All night, ooh그렇게시간낭비를하네네인스타그램속에서 !-->
+			</div>
+			<div class="columnLeft c16"></div>
+		</div>
+	</div>
+</body>
+	
+</html>
+
+<script> //Navbar Script
+	$(document).ready(() => {		
+		$('.navigationBarOption').on('mouseover', event => {
+			$(event.currentTarget).children().removeClass('hidden');
+		}).on('mouseleave', event => {
+			$(event.currentTarget).children("div").addClass('hidden');
+		});
+	})
+</script>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div class="row">
+		<div class="titleRegion">
+			<div class="container">
+				<div class="titleText">Notebook</div>
+				<div class="subtitleText">Weekly Summaries</div>
+			</div>
+		</div>
+		<div class="titleRegionFade"></div>
+		<div class="columnLeft c16"> <!-- Notebook Navigation bar - thx for the inspire W&M !-->
+			<div id="notebookNavbar">
+				<ul>
+					<li><a href="#week1">Week 1</a></li>
+					<li><a href="#week2">Week 2</a></li>
+					<li><a href="#week3">Week 3</a></li>
+					<li><a href="#week4">Week 4</a></li>
+					<li><a href="#week5">Week 5</a></li>
+					<li><a href="#week6">Week 6</a></li>
+					<li><a href="#week7">Week 7</a></li>
+					<li><a href="#week8">Week 8</a></li>
+					<li><a href="#week9">Week 9</a></li>
+					<li><a href="#week10">Week 10</a></li>
+					<li><a href="#week11">Week 11</a></li>
+					<li><a href="#week12">Week 12</a></li>
+					<li><a href="#week13">Week 13</a></li>
+					<li><a href="#week14">Week 14</a></li>
+					<li><a href="#week15">Week 15</a></li>
+					<li><a href="#week16">Week 16</a></li>
+					<li><a href="#week17">Week 17</a></li>
+					<li><a href="#week18">Week 18</a></li>
+					<li><a href="#week19">Week 19</a></li>
+					<li><a href="#week20">Week 20</a></li>
+					<li><a href="#week21">Week 21</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="columnLeft c66"> <!-- Where the actual content actually is !-->
+			<div class="meatyRegion">
+				<div id="Overview">
+					<div class="meatMeat">Here you can find our weekly summaries.</div>
+				</div>
+				<div id="week1">
+					<div class="meatSubtitle">
+						Week of May 29th
+					</div>
+					<div class="meatMeat">
+						This was our first week in lab! We took a week off after school to take a break and destress. Since our team is relatively new to lab techniques and our parts haven’t come in yet, we decided to spend this first week working on basic lab techniques and the Interlab Study. We attempted to amplify the A3, C3, and K3 backbones while we waited for parts to arrive.
+					</div>
+				</div>
+				<div id="week2">
+					<div class="meatSubtitle">
+						Week of June 4<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						Our first week went well and we were happy with the way we completed the Interlab study. This week, we wanted to get started on our plastic project and assembled the HlyBD into an iGEM backbone for our PETase secretion system. Transformations and overnights for the HlyBD part were successful. We sent out our HlyBD part to be sequenced. We still had more difficulty with working on amplifying the iGEM backbones and decided to work on doing some troubleshooting to determine where our process is going wrong.
+					</div>
+				</div>
+				<div id="week3">
+					<div class="meatSubtitle">
+						Week of June 11<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						We got back our sequencing results and found out that we did correctly assemble our plasmid. We attempted to troubleshoot the amplification of iGEM backbones. Unfortunately, our G-blocks were delayed again so we weren’t able to do too much wet lab work. We started planning our Mid-Atlantic Meetup and other outreach activities for our local community.
+					</div>
+				</div>
+				<div id="week4">
+					<div class="meatSubtitle">
+						Week of June 18<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						Another week while our G-block wasn’t able to be synthesized. We really do need to get this PETase G-block so while IDT is still attempting to synthesize it for us, we are reaching out to other teams that have worked on it in the past to see if we could possible get it from them instead. We worked on cleaning the lab and ordering new reagents. We also learned theory for many different lab techniques so that we can instantly learn how to troubleshoot the problems that occur in lab. Flowcharts are our friend!
+					</div>
+				</div>
+				<div id="week5">
+					<div class="meatSubtitle">
+						Week of June 25<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						Our part still hasn’t come in, so our lab work has slowed to a crawl. In the meantime, we worked on some outreach. Another student research team on campus came to tour our lab and we talked to them about synthetic biology and our project. We also started a journal club! We look at one or two different articles every week (typically in the field of synthetic biology). One student gives a presentation on the article and afterwards we discussed the implications that this could have on our project and what we learned from it. It went really well this first week and helped promote critical thinking. Hopefully, we can do things like this every week.
+					</div>
+				</div>
+				<div id="week6">
+					<div class="meatSubtitle">
+						Week of July 2<sup>nd</sup>
+					</div>
+					<div class="meatMeat">
+						Again, we haven’t received all the parts that we need to produce our completed plasmid. In the meantime, we are working on producing bacterial cellulose for hardware for our plastic degradation. We also started brainstorming good designs for our hardware project. We started designing T-shirts and other graphics for our project to make it simpler to explain. This week, the lab members who weren’t in lab as frequently were concerned that they were losing understanding of our progress so we had a long lab meeting on the weekend to catch everyone up and update each other on all aspects of the project. The modeling team did a good job explaining what they discovered in terms of rate of plastic degradation. This encouraged us to allow at least a month for incubated PETase enzymes to degrade plastic and run experiments on it.
+					</div>
+				</div>
+				<div id="week7">
+					<div class="meatSubtitle">
+						Week of July 9<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						The door to our lab broke early this week so we were having problems getting in and out. Luckily, it was fixed quite fast. Our PETase Gblock finally came in so we can really get started on the primary plasmid for our project. Everyone was very excited for this. Also, our Mid-Atlantic Meetup was this Friday so we spent a lot of time preparing to explain our project and the modeling that we have done up to this point. It went really well and we could see a lot of different teams talking to each other and fostering connections and sharing knowledge. Holly from iGEM also came by and was an absolute delight to talk to. We learned a lot about other teams and their outreach in local communities.
+					</div>
+				</div>
+				<div id="week8">
+					<div class="meatSubtitle">
+						Week of July 16<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						This week we assembled our PETase Gblock and transformed it. We ran a gel on the PETase and sent it for sequencing. Unfortunately, it seems like the backbone annealed onto itself rather than assembling with the Gblock. We are going to run it again but attempt to further optimize the process so it hopefully doesn’t happen again. It’s starting to get to the point of summer where people are going to have to leave the housing near campus which will make it more difficult for students to come in and continue doing work.
+					</div>
+				</div>
+				<div id="week9">
+					<div class="meatSubtitle">
+						Week of July 23<sup>rd</sup>
+					</div>
+					<div class="meatMeat">
+						Once again, we attempted to assemble the PETase from the Gblock and transformed and miniprepped before sending for sequencing. This time, it ended up working for us and we can now 3A assemble it with the cellulose-binding domain and our secretion system. The transformation of PETase with the HlyBD was successful so next week we will make overnights and send it for sequencing to confirm that it was assembled correctly.
+					</div>
+				</div>
+				<div id="week10">
+					<div class="meatSubtitle">
+						Week of July 30<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						We made overnights of our plasmid and sent it for sequencing. As we are getting closer to finishing up our plasmid, we started making plans for experiments to test the efficacy of our project when it comes to degradation. We also are now planning on making a way to detect plastic degradation through the use of other enzymes and plasmids. We looked at past iGEM projects for any ideas and started contacting other labs for certain plasmids to detect the byproducts of PET degradation. We also started working on a rough draft of a Jamboree presentation to display all the data and planning that has gone into our project so far.
+						<br><b>Introduce Masai and tph plasmids</b>
+					</div>
+				</div>
+				<div id="week11">
+					<div class="meatSubtitle">
+						Week of August 6<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						 At this time, a bunch of lab members went on vacation since we didn’t have campus housing during August. Also, we only have two more weeks until school starts so we decided to give people a break and only a few people were in lab at that time.
+						<br><b>Talk about pNBP. Talk about pGLO/Masai</b>
+					</div>
+				</div>
+				<div id="week12">
+					<div class="meatSubtitle">
+						Week of August 13<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						pNBP, transform pGLO and PcaU attempted, but failed
+					</div>
+				</div>
+				<div id="week13">
+					<div class="meatSubtitle">
+						Week of August 20<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week14">
+					<div class="meatSubtitle">
+						Week of August 27<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week15">
+					<div class="meatSubtitle">
+						Week of September 3<sup>rd</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week16">
+					<div class="meatSubtitle">
+						Week of September 10<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week17">
+					<div class="meatSubtitle">
+						Week of September 17<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week18">
+					<div class="meatSubtitle">
+						Week of September 24<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week19">
+					<div class="meatSubtitle">
+						Week of October 1<sup>st</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week20">
+					<div class="meatSubtitle">
+						Week of October 8<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+					</div>
+				</div>
+				<div id="week21">
+					<div class="meatSubtitle">
+						Week of October 15<sup>th</sup>
+					</div>
+					<div class="meatMeat">
+						yo what was that cell bio midterm
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	
+</html>

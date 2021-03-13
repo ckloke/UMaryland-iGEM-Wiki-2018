@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div class="row"> <!-- honestly idk why this is here - i just copied it from somewhere and then now i'm too scared to remove this class !-->
+		<div class="titleRegion" style="background-image: url(http://2018.igem.org/wiki/images/6/66/T--UMaryland--patternAlternateTwo.png)">
+			<div class="container" style="height: 200px;">
+				<div class="titleContainer">
+					<div class="titleText">Demonstrate</div>
+					<div class="subtitleText">Detecting TPA with PcaU</div>
+				</div>
+			</div>
+			<div class="titleRegionFade"></div>
+		</div>
+		<div class="columnLeft c16"></div>
+		<div class="columnLeft c66"> <!-- Where the actual content actually is !-->
+				<div id="Results">
+					<div class="meatSubtitle">
+						Results
+					</div>
+					<div class="meatMeat">
+						<div>
+							PcaU was tested and shown to be capable of distinguishing single micromolar differences in pure PCA concentration when inside BL21 DE3 E. coli. The sensor was also found to be functional in 5a cells, although not as sensitive. Further information and characterization of PCAU’s sensitivity to PCA is available on the part’s <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2825002"><u>registry page</u></a>.
+						</div>
+						<br>
+						<div class="center">
+							<div class="imageBox" style="height: 100%">
+								<img src="http://2018.igem.org/wiki/images/a/a8/T--UMaryland--TPH_function.png" style="max-width: 80%" alt="Waluigi Time!">
+							</div>
+						</div>
+						<br>
+						<div>
+							12 well plate TPA activity assay, n=4. Each well in a 12 well plate was filled with 900ul of 10mM Tris, pH 7.2, with 100uM TPA. 100um of enzyme mix supernatant was added to 4 wells, 100um of enzyme mix resuspended pellet was added to another 4, and water was added to 4 control wells. Plate was incubated at 30C overnight to enzymatically convert TPA to PCA. PcaU BL21 cells were grown to OD600=0.6, and 1mL culture was added to each well, diluting original TPA concentration to a final 45uM. Fluorescence was taken in a plate reader eight hours later at 395nm excitation, 509nm emission. A significant difference was observed between supernatant and control. The pellet failed to produce a significant result.
+						</div>
+						<br>
+						<div class="center">
+							<div class="imageBox" style="height: 100%">
+								<img src="http://2018.igem.org/wiki/images/9/9a/T--UMaryland--TPA_detection.png" style="max-width: 80%" alt="Waluigi Time!">
+							</div>
+						</div>
+						<br>
+						<div>
+							TPA detection assay, n=4. Each well was filled with 900ul of 10mM Tris, pH 7.2, with 4 containing 100um TPA, 4 containing 50um TPA, and 4 containing no TPA. 100ul of tph enzyme mix was added to each well and plate was incubated at 30C overnight to enzymatically convert TPA to PCA. PcaU BL21 cells were grown to OD600=0.6, and 1mL culture was added to each well, diluting samples to 45uM TPA and 22.5uM TPA final concentrations. Fluorescence was taken in a plate reader six hours later at 395nm excitation, 509nm emission. A significant difference was observed between culture exposed to degraded TPA and the control. The difference between 22.5uM TPA and 45uM TPA was not significant.
+						</div>
+						<br>
+						<div>
+							This protocol has demonstrated efficacy for detecting the presence of a PET degradation byproduct, TPA. However, the magnitude of error results in an inability to distinguish between certain concentrations of product. If the sensor is to be used for directed evolution, it must be capable of doing this. Improving sensor resolution to achieve this result could be accomplished in a variety of manners. The first action we would pursue is HIS purification of the TPH enzymes, since earlier tests suggested that the presence of cell lysate in the TPH enzyme mix may have impacted the growth of E. coli and driven up error. A lab with more resources and time would be able to express TPH enzymes and PCAU in the same cell. Not only would this drive down error from exposure to cell lysate, but it would permit single cell analysis of TPH activity through flow cytometry.
+						</div>
+						<br>
+						<div class="center">
+							<div class="imageBox" style="height: 100%">
+								<img src="http://2018.igem.org/wiki/images/2/24/T--UMaryland--PETasePCAU2.png" style="max-width: 80%" alt="Waluigi Time!">
+							</div>
+						</div>
+						<br>
+						<div>
+							PETase activity test, testing supernatant of PET plastic exposed to PETase lysate for one week. Error level is high due to the 24 well plate hitting the wall of the shaker, resulting in the plate needing to be read 2 hours after PcaU induction. The hit caused some media to leak from the sides of wells, which was partially corrected for by dividing fluorescence over absorbance. The results on this test are not conclusive, but they are promising. Knowing that 25uM TPA is distinguishable from a negative control after 6 hours with our approach, the fact that the average fluorescence for degraded PET is noticeably higher than our TPA positive control leads us to predict that the assay is capable of producing results.
+						</div>
+						<br>
+						<div>
+							It is unusual that PETase would produce such high fluorescence, however, because that would require a great amount more TPA that 25uM. In fact, it would require more than should be able to dissolve in water. This may have been a result of active PETase still being present in the supernatant when the TPH enzyme mix was added. Thus, as the TPH enzyme mix was converting TPA to PCA during the overnight incubation, PETase may have been producing more TPA from PET byproducts left over in the supernatant.
+						</div>
+						<br>
+						<div>
+							The test above will be repeated, but data will not be available in time for the wiki freeze. We are optimistic that we can conclusively detect PET degradation, and if we manage to do so you will see our results at the Jamboree! In conclusion, there are many, many variables to account for in this system. However, with enough continued testing and optimization we are confident it will be possible to quantify PET degradation using this system. Then, the potential of directed PETase evolution via cell fluorescence will be unleashed!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	
+</html>

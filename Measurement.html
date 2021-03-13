@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div class="row"> <!-- honestly idk why this is here - i just copied it from somewhere and then now i'm too scared to remove this class !-->
+		<div class="titleRegion" style="background-image: url(http://2018.igem.org/wiki/images/6/66/T--UMaryland--patternAlternateTwo.png)">
+			<div class="container" style="height: 200px;">
+				<div class="titleContainer">
+					<div class="titleText">Measurement</div>
+					<div class="subtitleText">A Cheap, Sensative Biosensor for PET Degredation</div>
+				</div>
+			</div>
+			<div class="titleRegionFade"></div>
+		</div>
+		<div class="columnLeft c16"></div>
+		<div class="columnLeft c66"> <!-- Where the actual content actually is !-->
+			<div class="meatyRegion">
+				<div id="Overview">
+					<div class="meatMeat">
+						PET degradation has been and is a <a href="http://2018.igem.org/Team:UMaryland/PETaseIntro"><u>popular iGEM project</u></a>. However, measurement of this degradation remains a challenge. We propose a cheap, sensative biosensor to solve this problem.
+					</div>
+				</div>
+				<div id="intro">
+					<div class="meatSubtitle">
+						Current Problems
+					</div>
+					<div class="meatMeat">
+						<div>
+							<div class="imageBox float_right" style=" width: 400px;">
+								<img src="http://2018.igem.org/wiki/images/6/6f/T--UMaryland--PNPBissue.png" style="height: inherit; width: inherit;" alt="Waluigi Time!">
+								<div class="imageBoxDescription">
+									Figure from Yoshida et. al.
+									<br>
+									Despite being much more effective at degradation of PET, PETase produces minimal results in a PNPB absorbance assay.</div>
+							</div>
+							Measurement of PET degradation remains a challenge for three major reasons.
+							<br><br>
+							First, the fastest PET degrading enzyme currently on the registry, PETase, is highly specific for PET. This means that despite its superior degrading ability, it will actually produce weaker results when tested with a PNPB esterase assay than less powerful enzymes like LC cutinase (joo et. al.). This assay has been very popular with iGEM teams, but can not be used to determine which of two enzymes is more effective at PET degradation.
+							<br><br>
+						</div>
+						<div>
+							Second, enzymatic degradation of PET is glacially slow. No iGEM team has been able to confirm PET degradation on the basis of visual inspection or weight. The only way this degradation has been successfully detected is with powerful instruments such as SEM, mass spec, HPLC, and cell-free expression. Teams without access to these expensive resources have no way to obtain results yet.
+							<br><br>
+							<div class="center">
+								<div class="imageBox">
+									<img src="http://2018.igem.org/wiki/images/2/2e/T--UMaryland--PETinstruments.png" style="width: inherit" alt="Waluigi Time!">
+									<div class="imageBoxDescription">Very pricey white benchtop machines that detect PET degradation (SEM, LCMS, HPLC). Very, very pricey.</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="imageBox float_right" style=" width: 400px;">
+								<img src="http://2018.igem.org/wiki/images/e/e0/T--UMaryland--PET_MHET_product.png" style="height: inherit; width: inherit;" alt="Waluigi Time!">
+								<div class="imageBoxDescription">
+									A popular figure on PETase byproducts and the role of MHETase</div>
+							</div>
+							The third challenge lies in the nature of PET degradation byproducts. These include MHET, ethylene Glycol, and TPA. Ethylene glycol is metabolized by E. coli, and teams have not been able to to determine enzymatic efficiency based on cell growth from ethylene glycol production. MHET is converted to TPA and ethylene glycol by MHETase, which makes TPA the most relevant target when quantifying degradation. However, TPA has poor solubility in water of about 100uM. Thus, any method to detect TPA from PET degradation must be extremely sensitive.
+						</div>
+					</div>
+				</div>
+				<div id="tpadetect">
+					<div class="meatSubtitle">
+						Our Solution
+					</div>
+					<div class="meatMeat">
+						<div>
+							Our project employs a fluorescent biosensor from Los Alamos, PcaU, that is the product of directed evolution for high sensitivity to a downstream byproduct of TPA metabolism: Protocatechuic acid (PCA). We have shown that this sensor differentiates single micromolar PCA concentrations and can be used to detect TPA. Teams will be able to quantify PET degradation through bacterial fluorescence without need for expensive instruments. The quantitative cell-based sensor has potential use in the directed evolution of PETase as well. Notably, many of the latest articles of PETase mention that the enzyme holds promise for substantial improvement, making the promise of such an approach quite exciting. Details on the PcaU biosensor are available in its <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2825002"><u>registry page</u></a>.
+							<br><br>
+							<div class="center">
+								<div class="imageBox" style="height: 100%">
+									<img src="http://2018.igem.org/wiki/images/6/6d/T--UMaryland--PCAU_low.png" style="width: 80%" alt="Waluigi Time!">
+									<div class="imageBoxDescription">The lower boundary of PCAU detection range, n=8. Such sensitivity is necessary if we hope to detect and quantify TPA production from PET degradation.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	
+</html>

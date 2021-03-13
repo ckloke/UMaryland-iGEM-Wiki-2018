@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div class="row"> <!-- honestly idk why this is here - i just copied it from somewhere and then now i'm too scared to remove this class !-->
+		<div class="titleRegion" style="background-image: url(http://2018.igem.org/wiki/images/6/66/T--UMaryland--patternAlternateTwo.png)">
+			<div class="container" style="height: 200px;">
+				<div class="titleContainer">
+					<div class="titleText">InterLab</div>
+				</div>
+			</div>
+			<div class="titleRegionFade"></div>
+		</div>
+		<div class="columnLeft c16"></div>
+		<div class="columnLeft c66"> <!-- Where the actual content actually is !-->
+			<div class="meatyRegion">
+				<div id="Overview">
+					<div class="meatMeat">
+						Synthetic biology is all about collaboration between scientists in an attempt to further our understanding of the field and improve the world around us. However, with the variability that occurs in synthetic biology measurement, it is much harder to consistently build on work done by others. This year, the 5th Interlab Study was designed to reduce lab to lab variability in fluorescence by normalizing data to Colony Forming Units (CFU). The 2018 UMaryland iGEM team has performed the interlab study using the <a href="http://2018.igem.org/wiki/images/0/09/2018_InterLab_Plate_Reader_Protocol.pdf"><u>protocol</u></a> distributed by the Measurement Committee.
+						<br><br>
+						Feel free to download our data <a href="http://2018.igem.org/wiki/images/e/ec/T--UMaryland--interlab_excel_sheet.xlsx"><u>here</u></a>.
+					</div>
+				</div>
+				<div id="procedures">
+					<div class="meatSubtitle">
+						Procedures
+					</div>
+					<div class="meatMeat">
+						All measurements were performed using a standard clear 96-well plate. Calibration of our microplate reader used LUDOX CL-X as a single point reference to appropriately convert absorbance values into a standard OD600 measurement. Absorbances were measured for four replicates per LUDOX and deionized water at 600 nm. The particle standard curve was produced using silica beads and measured at 600 nm. There was also a fluorescence standard curve produced by using fluorescein and 1xPBS solution. Once all calibrations were completed, transformations of all devices in DH5-α, including positive and negative controls took place. Two colonies were chosen from each and incubated in 5 mL of LB media with chloramphenicol. They were left overnight for 16 hours at 37 C at around 220 rpm. All samples were immediately placed on ice and 100 ul was pipetted into the 96 well plate at the 0 and 6h timepoints. The absorbance and fluorescence was measured for both. The CFU measurements were taken by diluting the overnight cultures to an OD of 0.1. The samples were then diluted 1:20 three times and then 1:10 another two times. The final three dilutions for each replicate were plated and colonies were counted after 18 hours of growth at 37 C to determine the CFU/ml as can be seen in our results section.
+					</div>
+				</div>
+				<div id="calibration">
+					<div class="meatSubtitle">
+						1. Calibration
+					</div>
+					<div class="meatMeat">
+						OD600 Reference Point - LUDOX Protocol
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/4/47/T--UMaryland--interlab1.png" alt="waluigi time">
+						</div>
+					</div>
+					<div class="meatMeat">
+						Particle Standard Curve - Microsphere Protocol
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/File:T--UMaryland--interlab2.png" alt="waluigi time">
+							<img src="http://2018.igem.org/wiki/images/b/bb/T--UMaryland--interlab_particle_standard_curve.png" alt="interlab particle standard curve">
+							<img src="http://2018.igem.org/wiki/images/7/77/T--UMaryland--interlab_particle_standard_curve_log.png" alt="interlab particle standard curve">
+							<img src="http://2018.igem.org/wiki/images/d/d6/T--UMaryland--interlab3.png" alt="waluigi time">
+						</div>
+					</div>
+					<div class="meatMeat">
+						Fluorescence Standard Curve - Fluorescein Protocol
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/8/89/T--UMaryland--interlab4.png" alt="waluigi time">
+							<img src="http://2018.igem.org/wiki/images/2/29/T--UMaryland--interlab_flourescein_standard_curve.png" alt="interlab particle standard curve">
+							<img src="http://2018.igem.org/wiki/images/0/02/T--UMaryland--interlab_flourescein_standard_curve_log.png" alt="interlab particle standard curve">
+							<img src="http://2018.igem.org/wiki/images/4/40/T--UMaryland--interlab5.png" alt="waluigi time">
+						</div>
+					</div>
+				</div>
+				<div id="cellmeasurment">
+					<div class="meatSubtitle">
+						2. Cell Measurement
+					</div>
+					<div class="meatMeat">
+						Plate Reader Raw Measurement
+						<br>
+						Fluorescence Raw Readings
+						<br>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/d/de/T--UMaryland--interlab6.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/1/16/T--UMaryland--interlab7.png" alt="waluigi time">
+						</div>
+						<br>
+						Abs600 Raw Readings
+						<br>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/8/88/T--UMaryland--interlab8.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/5/5d/T--UMaryland--interlab9.png" alt="waluigi time">
+						</div>
+						<br>
+						Fluorescence per OD
+						<br>
+						µM Flourescin/OD
+						<br>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/4/4f/T--UMaryland--interlab10.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/2/2f/T--UMaryland--interlab11.png" alt="waluigi time">
+						</div>
+						<br>
+						Net Fluorescin a.u.
+						<br>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/b/b0/T--UMaryland--interlab12.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/f/ff/T--UMaryland--interlab13.png" alt="waluigi time">
+						</div>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/4/49/T--UMaryland--interlab14.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/0/03/T--UMaryland--interlab15.png" alt="waluigi time">
+						</div>
+						<br>
+						Fluorescence per Particle
+						<br>
+						MEFL/Particle
+						<br>
+						Hour 0:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/e/e5/T--UMaryland--interlab16.png" alt="waluigi time">
+						</div>
+						Hour 6:
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/4/43/T--UMaryland--interlab17.png" alt="waluigi time">
+						</div>
+					</div>
+				</div>
+				<div id="cfus">
+					<div class="meatSubtitle">
+						3. CFUs per 0.1 OD600 <i>E. coli</i> Cultures
+					</div>
+					<div class="meatMeat">
+						Colonies Per Plate
+						<br>
+						Positive Control
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/7/73/T--UMaryland--interlab18.png" alt="waluigi time">
+						</div>
+						Negative Control
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/7/74/T--UMaryland--interlab19.png" alt="waluigi time">
+						</div>
+						<br>
+						Colony Forming Units per mL
+						<br>
+						Positive Control
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/1/11/T--UMaryland--interlab20.png" alt="waluigi time">
+						</div>
+						Negative Control
+						<br>
+						<div class="center">
+							<img src="http://2018.igem.org/wiki/images/8/8f/T--UMaryland--interlab21.png" alt="waluigi time">
+						</div>
+					</div>
+				</div>
+				<div id="Discussion">
+					<div class="meatSubtitle">
+						Discussion
+					</div>
+					<div class="meatMeat">
+						Our results indicate an increase in absorbance and fluorescence from 0 hours to 6 hours which indicates that there were more cells present after 6 hours at growth which contributed to a higher fluorescence. In particular, Test Device 1 had the highest fluorescence at both time points. Our positive and negative controls worked as intended and there was very little fluorescence detected from the negative control despite high absorbance indicating the presence of many cells. On average, there was a slight decrease in average fluorescence per molecule and average fluorescence per OD when comparing the 0 hour time point to the 6 hour time point, but it was mainly consistent. The individual cells did not become more or less fluorescent based on cellular concentration in the media.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<style>
+		img {
+			max-width: 90%;
+		}
+	</style>
+</html>

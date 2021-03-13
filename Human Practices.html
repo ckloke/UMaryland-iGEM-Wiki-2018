@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Template Title</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- 	The following loads the PHP code from the iGEM server and overrides some of it										-->
+	<!-- 	This will change the website design b/c it loads an external CSS file												-->
+	<!-- 	Keep this at the top of every page and start at the body to accurately predicthow it will look on the actual wiki	-->
+	
+	<link rel="stylesheet" href="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.igem.styles&amp;only=styles&amp;skin=igem&amp;*" />
+	<!--[if IE 6]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE60Fixes.css?303" media="screen" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="http://2017.igem.org/wiki/skins/Igem/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+	<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-css:7:faeec198b704588e6c9afc1a44274438 */</style>
+	<script src="http://2017.igem.org/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=igem&amp;*"></script>
+	<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Team:UMaryland","wgTitle":"Team:UMaryland","wgCurRevisionId":210700,"wgRevisionId":210700,"wgArticleId":4784,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Sjee12","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Team:UMaryland","wgUserId":4249,"wgUserEditCount":26,"wgUserRegistration":1506111679000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+	}</script><script>if(window.mw){
+	mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"igem","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+	"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"69f609a4874860fddd7722cf80d92827+\\","patrolToken":"5b477ca677c0eead231f5b751e100a30+\\","watchToken":"3400f8b8d6fc06d0eef1b82a555d96e5+\\"});},{},{});
+	/* cache key: 2017_igem_org:resourceloader:filter:minify-js:7:b5e6ef8165bdeea557afb234718ef17e */
+	}</script>
+	<script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+	}</script>
+</head>
+<script>
+		/* Hiding stupid stuff*/
+		$(document).ready(function() {
+                $('#top_title').css('display', 'none');
+				$('#top_menu').css('display', 'none');
+				//$('#top_menu_14').css('display', 'none');
+                $('#HQ_page').css('display', 'none');
+				$('#top_menu_under').css('display', 'none');	
+				$('#sideMenu').css('display', 'none');	
+                });
+		$('#HQ_page').attr("id","iGEM"); //voids all dumb CSS iGEM HQ wrote which overrides our code
+		$('#mw-content-text').css('overflow', 'visible');
+		$('#mw-content-text').attr("id","overruled").removeClass('mw-content-ltr');
+</script>
+
+<link rel="stylesheet" type="text/css" href="umaryland.css">
+	
+<body>
+	<div class="row"> <!-- honestly idk why this is here - i just copied it from somewhere and then now i'm too scared to remove this class !-->
+		<div class="titleRegion" style="background-image: url(http://2018.igem.org/wiki/images/6/66/T--UMaryland--patternAlternateTwo.png)">
+			<div class="container" style="height: 200px;">
+				<div class="titleContainer">
+					<div class="titleText">Human Practices</div>
+					<div class="subtitleText">Reaching out to the Community</div>
+				</div>
+			</div>
+			<div class="titleRegionFade"></div>
+		</div>
+		<div class="columnLeft c16"></div>
+		<div class="columnLeft c66"> <!-- Where the actual content actually is !-->
+			<div class="meatyRegion">
+				<div id="Overview">
+					<div class="meatMeat">
+						Before starting to design our hardware project PET NET, we decided to contact organizations that might be interested. We started out on the local level, eventually working our way up through larger organizations.
+					</div>
+				</div>
+				<div id="anacostia">
+					<div class="meatSubtitle">
+						<a href="https://www.anacostiaws.org/">Anacostia Watershed Society</a>
+					</div>
+					<div class="imageBox float_right" style=" width: 200px;">
+						<img src="http://2018.igem.org/wiki/images/7/77/T--UMaryland--waaaa.png" style="height: inherit; width: inherit;" alt="Waluigi Time!">
+						<div class="imageBoxDescription">(insert anacostia picture here)</div>
+					</div>
+					<div class="meatMeat">
+						To tackle this pollution problem, we looked locally to understand how our community contributes or how conscious our community was of this issue. Although our campus is privileged to have a heavily active sustainability department and waste conscious initiatives, the local College Park and DC area are heavily polluted urban areas. We wanted to learn how our project may address the concerns of our local conservationists, so we met up with Masaya Maede of the Anacostia Watershed Society (AWS), whose mission is to protect and restore the Anacostia River and the surrounding watershed communities by restoring natural ecosystems. Masaya engineering projects include designing and implementing trash traps surrounding the Kenilworth Park & Aquatic gardens, which consists of a metal screen structure laid atop on the banks of one of the tributaries in the Anacostia River. During heavy rainfall events when trash typically accumulates, the trap is capable of collecting it on its surface, although heavy flooding allows water and pollutants to flow around the trap and accumulate on the river bank. Although his group does frequent cleanups, they cannot account for all the trash may have collected further downstream during common flooding events. Masaya told us another issue was that the primary function of the trap is to collect floatable trash, but only 30% of the trash runoff is floatable and is currently working on developing systems of addressing non-floatable trash. He then showed us the accumulation of trash over a 4 month period collected by the traps, but although what he collects in his trap is variable based on rainfall, littering and pollution is not. After his survey data on pollution is collected, it is typically sorted and shipped off to recycling centers.
+						<br><br>
+						Although the mission of the AWS is admirable much of their capacity for clean up operations are contingent on the help of volunteers and not reliable for the long-term. To address the our own local issues, our we wanted the design of our project to be scalable for the easy use of individuals and consumers.
+					</div>
+				</div>
+				<div id="derwood">
+					<div class="meatSubtitle">
+						<a href="https://www.montgomerycountymd.gov/sws/facilities/rc/">Derwood Materials Recovery Facility</a>
+					</div>
+					<div class="imageBox float_right" style=" width: 500px;">
+						<img src="http://2018.igem.org/wiki/images/7/71/T--UMaryland--mrf.jpg" style="height: inherit; width: inherit;" alt="Waluigi Time!">
+					</div>
+					<div class="meatMeat">
+						We wanted to know how recyclables are managed and the benefits and setbacks to the current processes, so the UMaryland team went to visit the Derwood Materials Recycling Facility. There, we went on a tour of the factory where all the recycled waste is sorted by hand and machine into aluminum, glass, paper, and plastic waste, guided by Victoria Alleyne from the Maryland Environmental Service.
+						<br><br>
+						Victoria informed us that most of plastic that is acquired in their facility is high crystalline PET or PET bottles, which are a major source of revenue for the recycling facility because of its great demand in the packaging and bottling industries such as Coke or Pepsi. This recycling process, however, is not flawless. According to Victoria, a single plastic bottle can only be degraded about six times before it loses its structural integrity or polymer quality to be recycled for bottle packaging and is then chemically degraded to be used in textiles and clothing.
+					</div>
+				</div>
+				<div id="epa">
+					<div class="meatSubtitle">
+						Environmental Protection Agency
+					</div>
+					<div class="imageBox float_right" style=" width: 500px;">
+						<img src="http://2018.igem.org/wiki/images/f/f2/T--UMaryland--epa.jpg" style="height: inherit; width: inherit;" alt="Waluigi Time!">
+					</div>
+					<div class="meatMeat">
+						After discussing with Derwood, we decided that the best option was to discover how current environmental regulation would impact our design. More specifically, we wanted to learn about regulations that limit the design and implementation of our design outside the lab for  both our stakeholders (recycling facilities and anacostia watershed society).
+						<br><br>
+						We met with Mr. Brandon Bray, a physical scientist, at the Environmental Protection Agency (EPA) for more information on the legal regulations on synthetic biology and their own current research efforts in tackling the issue of plastic waste. Mr. Bray explained that the need for a degradation system for PET plastics is extremely valuable, given the amount of plastic waste generated every year, and have been investigating alternative methods of managing this accumulation, such as waste to energy initiatives. Most PET plastics that are not recycled and sold to industries end up in landfills, which is a major pollution concern.
+						<br><br>
+						In terms of regulation and feasibility of our incorporated PET NET hardware design, genetic engineering projects are out of the scope of the agency’s regulations, since the current regulations are focused on regulating toxic chemical waste. Even though synthetic biology is not on the radar of the EPA, we then went to design a hardware system that would be able operate independently of the use of live bacterial cells and address their personal, if not legally stated, concerns of biohazardous materials. We then talked about an equally large concern of introducing microplastic waste from our degradation reaction, which generates the monomer terephthalate acid (TPA).
+						<br><br>
+						We initially responded that the complete organic degradation of PET was out of the scope of our project, but has been investigated by other researchers and iGEM teams in the past, but we were unable to imagine completely such a project given our timeframe. For now, we would have to revise and update the hardware system to ensure it was a closed degradation machine. The meeting with the EPA was a great opportunity to learn about other efforts addressing plastic waste pollution. GIven the lack of regulation of synthetic biology, it was a great opportunity to also let governmental scientists and law makers know the great future and present potential of solving real world problems through genetic engineering.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	
+</html>

@@ -1,0 +1,2129 @@
+<!doctype html>
+<html>
+	<meta charset="UTF-8">
+	
+	<head>
+		<title>Interlab Study - UMaryland iGEM 2018</title>
+	</head>
+
+	<body style="margin:0">
+		<div class="NavBar">
+			<div class="NavBarContainer">				
+				<div class="float_left" id="logocircleborder">
+					<div id="removeshadowonnavbar">
+						<a href="http://2018.igem.org/Team:UMaryland"><img src="images/waluigiprofile.png" style="width: 100px; height: 100px; position: relative; top: 10px; left: 20px;" alt="UMD iGEM 2018 logo but in a small form factor"></a>
+					</div>
+				</div>
+				<ul class="float_right"> <!-- <li class="DropdownDivider"></li> for the dropdown bar !-->
+					<li class="NavBarOptions">
+						Team
+						<ul class="Dropdown hidden">
+							<li>Team Members</li>
+							<li>Collaborations</li>
+						</ul>
+					</li>
+					<li class="NavBarOptions">
+						Project
+						<ul class="Dropdown hidden">
+							<li>Description</li>
+							<li>Design</li>
+							<li>Experiments</li>
+							<li>Notebook</li>
+							<li>InterLab</li>
+							<li>Model</li>
+							<li>Results</li>
+							<li>Demonstrate</li>
+							<li>Improve</li>
+							<li>Attribution</li>
+						</ul>
+					</li>
+					<li class="NavBarOptions">
+						Parts
+						<ul class="Dropdown hidden">
+							<li>Parts Overview</li>
+							<li>Basic Parts</li>
+							<li>Composite Parts</li>
+							<li>Part Collection</li>
+						</ul>
+					</li>
+					<li class="NavBarOptions">
+						Safety
+					</li>
+					<li class="NavBarOptions">
+						Human Practices
+						<ul class="Dropdown hidden">
+							<li>Human Practices</li>
+							<li>Education and Engagement</li>
+						</ul>
+					</li>
+					<li class="NavBarOptions">
+						Awards
+						<ul class="Dropdown hidden">
+							<li>Applied Design</li>
+							<li>Entrepreneurship</li>
+							<li>Hardware</li>
+							<li>Measurement</li>
+							<li>Model</li>
+							<li>Plant</li>
+							<li>Software</li>
+						</ul>
+					</li>
+					<li class="NavBarOptions">
+						<a href="http://igem.org/2018_Judging_Form?team=UMaryland">Judging Form</a>
+					</li>
+				</ul>
+			</div>
+		</div> 
+		
+		<div class="TitleRegion">
+			<div class="container">				
+				<div class="containerTitle">						
+						<div class="TitleText">Interlab Study</div>
+						<div class="SubtitleText">It's the 2018 iGEM Interlab Study!</div>
+				</div>
+			</div>
+			<div class="TitleFade"></div>
+		</div>
+		
+		<!-- i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way i regret doing it this way !-->
+		
+		<div class="meatSection">
+			<div class="container">
+				<div id="introduction">
+					<p>We did this year's iGEM InterLab study. It was tremendous.</p>
+					<p>We followed the protocol given by iGEM absolutely perfectly. Look at the beautiful protocol we followed <a href="http://2018.igem.org/wiki/images/0/09/2018_InterLab_Plate_Reader_Protocol.pdf">here</a>.</p>
+					<p>Download our excel file we actually used <a href="http://2018.igem.org/wiki/images/e/ec/T--UMaryland--interlab_excel_sheet.xlsx">here</a>.</p>
+				</div>
+				<div id="Calibration">
+					<h2>Calibration</h2>
+					<h3>OD600 Reference Point - LUDOX Protocol</h3>
+					<table id="calibrationTable">
+						<tr>
+							<th></th>
+							<th>LUDOX CL-X</th>
+							<th>H2O</th>
+						</tr>
+						<tr>
+							<th>Replicate 1</th>
+							<td class="blueCells">0.058</td>
+							<td class="blueCells">0.034</td>
+						</tr>
+						<tr>
+							<th>Replicate 2</th>
+							<td class="blueCells">0.056</td>
+							<td class="blueCells">0.035</td>
+						</tr>
+						<tr>
+							<th>Replicate 3</th>
+							<td class="blueCells">0.058</td>
+							<td class="blueCells">0.035</td>
+						</tr>
+						<tr>
+							<th>Replicate 4</th>
+							<td class="blueCells">0.058</td>
+							<td class="blueCells">0.035</td>
+						</tr>
+						<tr>
+							<th>Arithmetic Mean</th>
+							<td class="yellowCells">0.058</td>
+							<td class="yellowCells">0.035</td>
+						</tr>
+						<tr>
+							<th>Corrected Abs600</th>
+							<td class="yellowCells">0.058</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Reference OD600</th>
+							<td class="yellowCells">0.058</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>OD600/Abs600</th>
+							<td class="yellowCells">0.058</td>
+							<td></td>
+						</tr>
+					</table>
+					<h3>Particle Standard Curve - Microsphere Protocol</h3>
+					<table id="microsphereTable">
+						<tr>
+							<th>Number of Particles</th>
+							<th>2.35×10<sup>8</sup></th>
+							<th>1.18×10<sup>8</sup></th>
+							<th>5.88×10<sup>7</sup></th>
+							<th>2.94×10<sup>7</sup></th>
+							<th>1.47×10<sup>7</sup></th>
+							<th>7.35×10<sup>6</sup></th>
+							<th>3.68×10<sup>6</sup></th>
+							<th>1.84×10<sup>6</sup></th>
+							<th>9.19×10<sup>5</sup></th>
+							<th>4.60×10<sup>5</sup></th>
+							<th>2.30×10<sup>5</sup></th>
+							<th>0</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 1</th>
+							<td>0.716</td>
+							<td>0.322</td>
+							<td>0.191</td>
+							<td>0.095</td>
+							<td>0.067</td>
+							<td>0.059</td>
+							<td>0.039</td>
+							<td>0.036</td>
+							<td>0.036</td>
+							<td>0.035</td>
+							<td>0.034</td>
+							<td>0.036</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 2</th>
+							<td>0.406</td>
+							<td>0.359</td>
+							<td>0.212</td>
+							<td>0.111</td>
+							<td>0.072</td>
+							<td>0.051</td>
+							<td>0.044</td>
+							<td>0.036</td>
+							<td>0.036</td>
+							<td>0.035</td>
+							<td>0.034</td>
+							<td>0.034</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 3</th>
+							<td>0.587</td>
+							<td>0.347</td>
+							<td>0.203</td>
+							<td>0.116</td>
+							<td>0.075</td>
+							<td>-</td>
+							<td>0.041</td>
+							<td>0.038</td>
+							<td>0.038</td>
+							<td>0.036</td>
+							<td>0.035</td>
+							<td>0.034</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 4</th>
+							<td>0.815</td>
+							<td>0.419</td>
+							<td>0.219</td>
+							<td>0.123</td>
+							<td>0.081</td>
+							<td>0.051</td>
+							<td>0.048</td>
+							<td>0.040</td>
+							<td>0.038</td>
+							<td>0.037</td>
+							<td>0.036</td>
+							<td>0.035</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Mean</th>
+							<td>0.631</td>
+							<td>0.364</td>
+							<td>0.206</td>
+							<td>0.111</td>
+							<td>0.074</td>
+							<td>0.054</td>
+							<td>0.043</td>
+							<td>0.038</td>
+							<td>0.037</td>
+							<td>0.036</td>
+							<td>0.035</td>
+							<td>0.035</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Standard Deviation</th>
+							<td>0.177</td>
+							<td>0.038</td>
+							<td>0.012</td>
+							<td>0.012</td>
+							<td>0.006</td>
+							<td>0.005</td>
+							<td>0.004</td>
+							<td>0.002</td>
+							<td>0.001</td>
+							<td>0.001</td>
+							<td>0.001</td>
+							<td>0.001</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Net Mean</th>
+							<td>0.596</td>
+							<td>0.329</td>
+							<td>0.172</td>
+							<td>0.077</td>
+							<td>0.039</td>
+							<td>0.019</td>
+							<td>0.008</td>
+							<td>0.003</td>
+							<td>0.002</td>
+							<td>0.001</td>
+							<td>0.000</td>
+							<td class="whiteCellsImportant"></td>
+						</tr>
+					</table>
+					<img src="http://2018.igem.org/wiki/images/b/bb/T--UMaryland--interlab_particle_standard_curve.png" alt="interlab particle standard curve">
+					<img src="http://2018.igem.org/wiki/images/7/77/T--UMaryland--interlab_particle_standard_curve_log.png" alt="interlab particle standard curve">
+					<table id="particlesPerOD">
+						<tr>
+							<th>Number of Particles</th>
+							<th>2.35×10<sup>8</sup></th>
+							<th>1.18×10<sup>8</sup></th>
+							<th>5.88×10<sup>7</sup></th>
+							<th>2.94×10<sup>7</sup></th>
+							<th>1.47×10<sup>7</sup></th>
+							<th>7.35×10<sup>6</sup></th>
+							<th>3.68×10<sup>6</sup></th>
+							<th>1.84×10<sup>6</sup></th>
+							<th>9.19×10<sup>5</sup></th>
+							<th>4.60×10<sup>5</sup></th>
+							<th>2.30×10<sup>5</sup></th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">µM Fluorescein/a.u.</th>
+							<td>3.95×10<sup>8</sup></td>
+							<td>3.57×10<sup>8</sup></td>
+							<td>3.43×10<sup>8</sup></td>
+							<td>3.84×10<sup>8</sup></td>
+							<td>3.77×10<sup>8</sup></td>
+							<td>3.89×10<sup>8</sup></td>
+							<td>4.46×10<sup>8</sup></td>
+							<td>6.68×10<sup>8</sup></td>
+							<td>4.80×10<sup>8</sup></td>
+							<td>4.60×10<sup>8</sup></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>MEFL/a.u.</th>
+							<td></td>
+							<td class="yellowCells">3.70×10<sup>8</sup></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<h3>Fluorescence Standard Curve - Fluorescein Protocol</h3>
+					<table id="fluoresceinTable">
+						<tr>
+							<th>Fluorescein µM</th>
+							<th>10</th>
+							<th>5</th>
+							<th>2.5</th>
+							<th>1.25</th>
+							<th>0.625</th>
+							<th>0.313</th>
+							<th>0.156</th>
+							<th>0.078</th>
+							<th>0.039</th>
+							<th>0.0195</th>
+							<th>0.0098</th>
+							<th>0</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 1</th>
+							<td>27845</td>
+							<td>21611</td>
+							<td>15480</td>
+							<td>10321</td>
+							<td>5979</td>
+							<td>3376</td>
+							<td>1806</td>
+							<td>891</td>
+							<td>442</td>
+							<td>244</td>
+							<td>122</td>
+							<td>2</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 2</th>
+							<td>27711</td>
+							<td>19390</td>
+							<td>16110</td>
+							<td>10742</td>
+							<td>6223</td>
+							<td>3240</td>
+							<td>1756</td>
+							<td>895</td>
+							<td>467</td>
+							<td>227</td>
+							<td>115</td>
+							<td>2</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 3</th>
+							<td>27686</td>
+							<td>21709</td>
+							<td>15590</td>
+							<td>9458</td>
+							<td>5304</td>
+							<td>2972</td>
+							<td>1350</td>
+							<td>711</td>
+							<td>481</td>
+							<td>101</td>
+							<td>160</td>
+							<td>3</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Replicate 4</th>
+							<td>27431</td>
+							<td>21442</td>
+							<td>15379</td>
+							<td>9474</td>
+							<td>5366</td>
+							<td>2703</td>
+							<td>1427</td>
+							<td>716</td>
+							<td>359</td>
+							<td>197</td>
+							<td>115</td>
+							<td>3</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Mean</th>
+							<td>27668</td>
+							<td>21038</td>
+							<td>15640</td>
+							<td>10000</td>
+							<td>5718</td>
+							<td>3073</td>
+							<td>1585</td>
+							<td>803</td>
+							<td>437</td>
+							<td>192</td>
+							<td>128</td>
+							<td>2.5</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Standard Deviation</th>
+							<td>172.8</td>
+							<td>1104</td>
+							<td>325.1</td>
+							<td>638.8</td>
+							<td>454.0</td>
+							<td>298.2</td>
+							<td>229.7</td>
+							<td>103.7</td>
+							<td>54.60</td>
+							<td>63.86</td>
+							<td>21.59</td>
+							<td>0.5774</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Arithmetic Net Mean</th>
+							<td>27666</td>
+							<td>21036</td>
+							<td>15637</td>
+							<td>9996</td>
+							<td>5716</td>
+							<td>3070</td>
+							<td>1582</td>
+							<td>801</td>
+							<td>435</td>
+							<td>190</td>
+							<td>126</td>
+							<td class="whiteCellsImportant"></td>
+						</tr>
+					</table>
+					<img src="http://2018.igem.org/wiki/images/2/29/T--UMaryland--interlab_flourescein_standard_curve.png" alt="interlab particle standard curve">
+					<img src="http://2018.igem.org/wiki/images/0/02/T--UMaryland--interlab_flourescein_standard_curve_log.png" alt="interlab particle standard curve">
+					<table id="flouresceinAU">
+						<tr>
+							<th>Flourescein µM</th>
+							<th>10.00</th>
+							<th>5.00</th>
+							<th>2.50</th>
+							<th>1.25</th>
+							<th>0.63</th>
+							<th>0.31</th>
+							<th>0.16</th>
+							<th>0.08</th>
+							<th>0.04</th>
+							<th>0.02</th>
+							<th>0.01</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">µM Fluorescein/a.u.</th>
+							<td>3.61×10<sup>-4</sup></td>
+							<td>2.38×10<sup>-4</sup></td>
+							<td>1.60×10<sup>-4</sup></td>
+							<td>1.25×10<sup>-4</sup></td>
+							<td>1.09×10<sup>-4</sup></td>
+							<td>1.02×10<sup>-4</sup></td>
+							<td>9.88×10<sup>-5</sup></td>
+							<td>9.76×10<sup>-5</sup></td>
+							<td>8.99×10<sup>-5</sup></td>
+							<td>1.03×10<sup>-4</sup></td>
+							<td>7.78×10<sup>-5</sup></td>
+						</tr>
+						<tr>
+							<th>Mean µM Fluorescein/a.u.</th>
+							<td></td>
+							<td class="yellowCells">1.47×10<sup>-4</sup></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>MEFL/a.u.</th>
+							<td></td>
+							<td class="yellowCells">8.84×10<sup>8</sup></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="Cell Measurement">
+					<h2>Cell Measurement</h2>
+					<div id="Raw Plate Reader Measurements">
+						<h3>Plate Reader Raw Measurement</h3>
+						<h4>Fluorescence Raw Readings</h4>
+						<h5>Hour 0:</h5>
+						<table id="FlourescenceRawReadingsHour0">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+							<th>LB + Chloro. (blank)</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 1</th>
+							<td>23</td>
+							<td>43</td>
+							<td>63</td>
+							<td>44</td>
+							<td>24</td>
+							<td>84</td>
+							<td>63</td>
+							<td>55</td>
+							<td>23</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 2</th>
+							<td>25</td>
+							<td>36</td>
+							<td>51</td>
+							<td>36</td>
+							<td>21</td>
+							<td>69</td>
+							<td>52</td>
+							<td>44</td>
+							<td>20</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 3</th>
+							<td>25</td>
+							<td>35</td>
+							<td>51</td>
+							<td>38</td>
+							<td>23</td>
+							<td>70</td>
+							<td>52</td>
+							<td>44</td>
+							<td>20</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 4</th>
+							<td>19</td>
+							<td>37</td>
+							<td>54</td>
+							<td>35</td>
+							<td>23</td>
+							<td>70</td>
+							<td>53</td>
+							<td>48</td>
+							<td>21</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 1</th>
+							<td>25</td>
+							<td>35</td>
+							<td>80</td>
+							<td>29</td>
+							<td>25</td>
+							<td>74</td>
+							<td>68</td>
+							<td>38</td>
+							<td>21</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 2</th>
+							<td>28</td>
+							<td>34</td>
+							<td>81</td>
+							<td>31</td>
+							<td>25</td>
+							<td>75</td>
+							<td>69</td>
+							<td>39</td>
+							<td>22</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 3</th>
+							<td>27</td>
+							<td>35</td>
+							<td>83</td>
+							<td>32</td>
+							<td>25</td>
+							<td>75</td>
+							<td>68</td>
+							<td>40</td>
+							<td>21</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 4</th>
+							<td>31</td>
+							<td>46</td>
+							<td>105</td>
+							<td>40</td>
+							<td>34</td>
+							<td>101</td>
+							<td>90</td>
+							<td>52</td>
+							<td>27</td>
+						</tr>
+					</table>
+						<h5>Hour 6:</h5>
+						<table id="FlourescenceRawReadingsHour6">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+							<th>LB + Chloro. (blank)</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 1</th>
+							<td>31</td>
+							<td>288</td>
+							<td>447</td>
+							<td>251</td>
+							<td>37</td>
+							<td>132</td>
+							<td>111</td>
+							<td>205</td>
+							<td>24</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 2</th>
+							<td>36</td>
+							<td>266</td>
+							<td>382</td>
+							<td>213</td>
+							<td>36</td>
+							<td>112</td>
+							<td>93</td>
+							<td>186</td>
+							<td>20</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 3</th>
+							<td>35</td>
+							<td>252</td>
+							<td>382</td>
+							<td>216</td>
+							<td>37</td>
+							<td>108</td>
+							<td>102</td>
+							<td>178</td>
+							<td>21</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 4</th>
+							<td>36</td>
+							<td>260</td>
+							<td>381</td>
+							<td>216</td>
+							<td>39</td>
+							<td>113</td>
+							<td>93</td>
+							<td>179</td>
+							<td>22</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 1</th>
+							<td>36</td>
+							<td>260</td>
+							<td>381</td>
+							<td>216</td>
+							<td>39</td>
+							<td>116</td>
+							<td>140</td>
+							<td>161</td>
+							<td>24</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 2</th>
+							<td>39</td>
+							<td>215</td>
+							<td>340</td>
+							<td>152</td>
+							<td>110</td>
+							<td>121</td>
+							<td>137</td>
+							<td>163</td>
+							<td>24</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 3</th>
+							<td>37</td>
+							<td>210</td>
+							<td>348</td>
+							<td>150</td>
+							<td>108</td>
+							<td>117</td>
+							<td>139</td>
+							<td>161</td>
+							<td>23</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 4</th>
+							<td>41</td>
+							<td>258</td>
+							<td>415</td>
+							<td>175</td>
+							<td>130</td>
+							<td>150</td>
+							<td>183</td>
+							<td>198</td>
+							<td>23</td>
+						</tr>
+						</table>
+						<h4>Abs600 Raw Readings</h4>
+						<h5>Hour 0:</h5>
+						<table id="Abs600RawReadingsHour0">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+							<th>LB + Chloro. (blank)</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 1</th>
+							<td>0.077</td>
+							<td>0.073</td>
+							<td>0.074</td>
+							<td>0.078</td>
+							<td>0.075</td>
+							<td>0.068</td>
+							<td>0.068</td>
+							<td>0.068</td>
+							<td>0.060</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 2</th>
+							<td>0.079</td>
+							<td>0.075</td>
+							<td>0.069</td>
+							<td>0.077</td>
+							<td>0.075</td>
+							<td>0.074</td>
+							<td>0.076</td>
+							<td>0.074</td>
+							<td>0.054</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 3</th>
+							<td>0.077</td>
+							<td>0.074</td>
+							<td>0.062</td>
+							<td>0.078</td>
+							<td>0.076</td>
+							<td>0.077</td>
+							<td>0.077</td>
+							<td>0.077</td>
+							<td>0.059</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 4</th>
+							<td>0.068</td>
+							<td>0.076</td>
+							<td>0.076</td>
+							<td>0.080</td>
+							<td>0.074</td>
+							<td>0.071</td>
+							<td>0.073</td>
+							<td>0.077</td>
+							<td>0.057</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 1</th>
+							<td>0.081</td>
+							<td>0.077</td>
+							<td>0.084</td>
+							<td>0.077</td>
+							<td>0.072</td>
+							<td>0.074</td>
+							<td>0.079</td>
+							<td>0.078</td>
+							<td>0.060</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 2</th>
+							<td>0.085</td>
+							<td>0.075</td>
+							<td>0.083</td>
+							<td>0.079</td>
+							<td>0.072</td>
+							<td>0.074</td>
+							<td>0.076</td>
+							<td>0.082</td>
+							<td>0.059</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 3</th>
+							<td>0.081</td>
+							<td>0.076</td>
+							<td>0.083</td>
+							<td>0.081</td>
+							<td>0.074</td>
+							<td>0.074</td>
+							<td>0.088</td>
+							<td>0.081</td>
+							<td>0.057</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 4</th>
+							<td>0.086</td>
+							<td>0.075</td>
+							<td>0.083</td>
+							<td>0.075</td>
+							<td>0.072</td>
+							<td>0.074</td>
+							<td>0.072</td>
+							<td>0.082</td>
+							<td>0.056</td>
+						</tr>
+						</table>
+						<h5>Hour 6:</h5>
+						<table id="Abs600RawReadingsHour6">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+							<th>LB + Chloro. (blank)</th>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 1</th>
+							<td>0.445</td>
+							<td>0.437</td>
+							<td>0.258</td>
+							<td>0.447</td>
+							<td>0.487</td>
+							<td>0.108</td>
+							<td>0.329</td>
+							<td>0.459</td>
+							<td>0.062</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 2</th>
+							<td>0.456</td>
+							<td>0.475</td>
+							<td>0.261</td>
+							<td>0.444</td>
+							<td>0.518</td>
+							<td>0.140</td>
+							<td>0.324</td>
+							<td>0.477</td>
+							<td>0.059</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 3</th>
+							<td>0.473</td>
+							<td>0.433</td>
+							<td>0.270</td>
+							<td>0.450</td>
+							<td>0.524</td>
+							<td>0.109</td>
+							<td>0.353</td>
+							<td>0.450</td>
+							<td>0.063</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 1 Replicate 4</th>
+							<td>0.475</td>
+							<td>0.431</td>
+							<td>0.254</td>
+							<td>0.444</td>
+							<td>0.535</td>
+							<td>0.109</td>
+							<td>0.328</td>
+							<td>0.438</td>
+							<td>0.059</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 1</th>
+							<td>0.456</td>
+							<td>0.414</td>
+							<td>0.229</td>
+							<td>0.459</td>
+							<td>0.444</td>
+							<td>0.115</td>
+							<td>0.112</td>
+							<td>0.463</td>
+							<td>0.060</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 2</th>
+							<td>0.411</td>
+							<td>0.429</td>
+							<td>0.243</td>
+							<td>0.452</td>
+							<td>0.460</td>
+							<td>0.119</td>
+							<td>0.106</td>
+							<td>0.453</td>
+							<td>0.058</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 3</th>
+							<td>0.435</td>
+							<td>0.418</td>
+							<td>0.234</td>
+							<td>0.474</td>
+							<td>0.460</td>
+							<td>0.120</td>
+							<td>0.113</td>
+							<td>0.455</td>
+							<td>0.063</td>
+						</tr>
+						<tr class="blueCells">
+							<th class="whiteCellsImportant">Colony 2 Replicate 4</th>
+							<td>0.425</td>
+							<td>0.424</td>
+							<td>0.248</td>
+							<td>0.470</td>
+							<td>0.450</td>
+							<td>0.121</td>
+							<td>0.115</td>
+							<td>0.466</td>
+							<td>0.061</td>
+						</tr>
+					</table>
+						<h3>Fluoresence per OD</h3>
+						<h4>µM Flourescin/OD</h4>
+						<h5>Hour 0:</h5>
+						<table id="uMFlourescinODHour0">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>0.000</td>
+							<td>0.078</td>
+							<td>0.145</td>
+							<td>0.059</td>
+							<td>0.003</td>
+							<td>0.386</td>
+							<td>0.253</td>
+							<td>0.203</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>0.010</td>
+							<td>0.039</td>
+							<td>0.105</td>
+							<td>0.035</td>
+							<td>0.002</td>
+							<td>0.124</td>
+							<td>0.074</td>
+							<td>0.061</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>0.014</td>
+							<td>0.039</td>
+							<td>0.105</td>
+							<td>0.035</td>
+							<td>0.002</td>
+							<td>0.124</td>
+							<td>0.074</td>
+							<td>0.061</td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>0.014</td>
+							<td>0.051</td>
+							<td>0.121</td>
+							<td>0.048</td>
+							<td>0.009</td>
+							<td>0.141</td>
+							<td>0.090</td>
+							<td>0.068</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>-0.009</td>
+							<td>0.043</td>
+							<td>0.088</td>
+							<td>0.031</td>
+							<td>0.006</td>
+							<td>0.177</td>
+							<td>0.101</td>
+							<td>0.068</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>0.010</td>
+							<td>0.042</td>
+							<td>0.125</td>
+							<td>0.023</td>
+							<td>0.012</td>
+							<td>0.179</td>
+							<td>0.140</td>
+							<td>0.037</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>0.013</td>
+							<td>0.037</td>
+							<td>0.121</td>
+							<td>0.023</td>
+							<td>0.012</td>
+							<td>0.161</td>
+							<td>0.077</td>
+							<td>0.040</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>0.007</td>
+							<td>0.051</td>
+							<td>0.146</td>
+							<td>0.035</td>
+							<td>0.022</td>
+							<td>0.208</td>
+							<td>0.199</td>
+							<td>0.049</td>
+						</tr>
+					</table>
+						<h5>Hour 6:</h5>					
+						<table id="uMFlourescinODHour6">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>0.001</td>
+							<td>0.036</td>
+							<td>0.109</td>
+							<td>0.030</td>
+							<td>0.002</td>
+							<td>0.119</td>
+							<td>0.017</td>
+							<td>0.023</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>0.002</td>
+							<td>0.030</td>
+							<td>0.091</td>
+							<td>0.025</td>
+							<td>0.002</td>
+							<td>0.058</td>
+							<td>0.014</td>
+							<td>0.020</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>0.002</td>
+							<td>0.032</td>
+							<td>0.089</td>
+							<td>0.026</td>
+							<td>0.002</td>
+							<td>0.092</td>
+							<td>0.013</td>
+							<td>0.021</td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>0.002</td>
+							<td>0.032</td>
+							<td>0.089</td>
+							<td>0.026</td>
+							<td>0.002</td>
+							<td>0.092</td>
+							<td>0.013</td>
+							<td>0.021</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>0.002</td>
+							<td>0.026</td>
+							<td>0.091</td>
+							<td>0.015</td>
+							<td>0.011</td>
+							<td>0.085</td>
+							<td>0.113</td>
+							<td>0.017</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>0.002</td>
+							<td>0.026</td>
+							<td>0.087</td>
+							<td>0.016</td>
+							<td>0.011</td>
+							<td>0.081</td>
+							<td>0.119</td>
+							<td>0.018</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>0.002</td>
+							<td>0.027</td>
+							<td>0.096</td>
+							<td>0.016</td>
+							<td>0.011</td>
+							<td>0.084</td>
+							<td>0.118</td>
+							<td>0.018</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>0.003</td>
+							<td>0.033</td>
+							<td>0.106</td>
+							<td>0.019</td>
+							<td>0.014</td>
+							<td>0.107</td>
+							<td>0.150</td>
+							<td>0.022</td>
+						</tr>
+					</table>
+						<h4>Net Flourescin a.u.</h4>
+						<h5>Hour 0:</h5>
+						<table id="netFluoresceinauHour0">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>0</td>
+							<td>20</td>
+							<td>40</td>
+							<td>21</td>
+							<td>1</td>
+							<td>61</td>
+							<td>40</td>
+							<td>32</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>5</td>
+							<td>16</td>
+							<td>31</td>
+							<td>16</td>
+							<td>1</td>
+							<td>49</td>
+							<td>32</td>
+							<td>24</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>5</td>
+							<td>15</td>
+							<td>31</td>
+							<td>18</td>
+							<td>3</td>
+							<td>50</td>
+							<td>32</td>
+							<td>24</td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>-2</td>
+							<td>16</td>
+							<td>33</td>
+							<td>14</td>
+							<td>2</td>
+							<td>49</td>
+							<td>32</td>
+							<td>27</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>4</td>
+							<td>14</td>
+							<td>59</td>
+							<td>8</td>
+							<td>4</td>
+							<td>53</td>
+							<td>47</td>
+							<td>17</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>6</td>
+							<td>12</td>
+							<td>59</td>
+							<td>9</td>
+							<td>3</td>
+							<td>53</td>
+							<td>47</td>
+							<td>17</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>6</td>
+							<td>14</td>
+							<td>62</td>
+							<td>11</td>
+							<td>4</td>
+							<td>54</td>
+							<td>47</td>
+							<td>19</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>4</td>
+							<td>14</td>
+							<td>78</td>
+							<td>13</td>
+							<td>7</td>
+							<td>74</td>
+							<td>63</td>
+							<td>25</td>
+						</tr>
+					</table>
+						<h5>Hour 6:</h5>				
+						<table id="netFluoresceinauHour6">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>7</td>
+							<td>264</td>
+							<td>423</td>
+							<td>227</td>
+							<td>13</td>
+							<td>108</td>
+							<td>87</td>
+							<td>181</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>16</td>
+							<td>261</td>
+							<td>263</td>
+							<td>193</td>
+							<td>16</td>
+							<td>92</td>
+							<td>73</td>
+							<td>166</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>14</td>
+							<td>231</td>
+							<td>362</td>
+							<td>195</td>
+							<td>16</td>
+							<td>87</td>
+							<td>81</td>
+							<td>157</td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>14</td>
+							<td>238</td>
+							<td>359</td>
+							<td>194</td>
+							<td>17</td>
+							<td>91</td>
+							<td>71</td>
+							<td>157</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>12</td>
+							<td>184</td>
+							<td>305</td>
+							<td>121</td>
+							<td>81</td>
+							<td>92</td>
+							<td>116</td>
+							<td>137</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>15</td>
+							<td>191</td>
+							<td>316</td>
+							<td>128</td>
+							<td>86</td>
+							<td>97</td>
+							<td>113</td>
+							<td>139</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>14</td>
+							<td>187</td>
+							<td>325</td>
+							<td>127</td>
+							<td>85</td>
+							<td>94</td>
+							<td>116</td>
+							<td>138</td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>18</td>
+							<td>235</td>
+							<td>392</td>
+							<td>152</td>
+							<td>107</td>
+							<td>127</td>
+							<td>160</td>
+							<td>175</td>
+						</tr>
+					</table>
+						<div id="Net Abs 600">
+							<h5>Hour 0:</h5>
+							<table id="netAbs600Hour0">
+								<tr>
+									<th></th>
+									<th>Negative Control</th>
+									<th>Positive Control</th>
+									<th>Device 1</th>
+									<th>Device 2</th>
+									<th>Device 3</th>
+									<th>Device 4</th>
+									<th>Device 5</th>
+									<th>Device 6</th>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+									<td>0.017</td>
+									<td>0.013</td>
+									<td>0.014</td>
+									<td>0.018</td>
+									<td>0.015</td>
+									<td>0.008</td>
+									<td>0.008</td>
+									<td>0.008</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+									<td>0.025</td>
+									<td>0.021</td>
+									<td>0.015</td>
+									<td>0.023</td>
+									<td>0.021</td>
+									<td>0.020</td>
+									<td>0.022</td>
+									<td>0.020</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+									<td>0.018</td>
+									<td>0.015</td>
+									<td>0.013</td>
+									<td>0.019</td>
+									<td>0.017</td>
+									<td>0.018</td>
+									<td>0.018</td>
+									<td>0.018</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+									<td>0.011</td>
+									<td>0.019</td>
+									<td>0.019</td>
+									<td>0.023</td>
+									<td>0.017</td>
+									<td>0.014</td>
+									<td>0.016</td>
+									<td>0.020</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+									<td>0.021</td>
+									<td>0.017</td>
+									<td>0.024</td>
+									<td>0.017</td>
+									<td>0.012</td>
+									<td>0.014</td>
+									<td>0.019</td>
+									<td>0.018</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+									<td>0.026</td>
+									<td>0.016</td>
+									<td>0.024</td>
+									<td>0.020</td>
+									<td>0.013</td>
+									<td>0.015</td>
+									<td>0.017</td>
+									<td>0.023</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+									<td>0.024</td>
+									<td>0.019</td>
+									<td>0.026</td>
+									<td>0.024</td>
+									<td>0.017</td>
+									<td>0.017</td>
+									<td>0.031</td>
+									<td>0.024</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+									<td>0.030</td>
+									<td>0.019</td>
+									<td>0.027</td>
+									<td>0.019</td>
+									<td>0.016</td>
+									<td>0.018</td>
+									<td>0.016</td>
+									<td>0.026</td>
+								</tr>
+							</table>
+							<h5>Hour 6:</h5>
+							<table id="netAbs600Hour6">
+								<tr>
+									<th></th>
+									<th>Negative Control</th>
+									<th>Positive Control</th>
+									<th>Device 1</th>
+									<th>Device 2</th>
+									<th>Device 3</th>
+									<th>Device 4</th>
+									<th>Device 5</th>
+									<th>Device 6</th>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+									<td>0.383</td>
+									<td>0.375</td>
+									<td>0.196</td>
+									<td>0.385</td>
+									<td>0.425</td>
+									<td>0.046</td>
+									<td>0.267</td>
+									<td>0.397</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+									<td>0.397</td>
+									<td>0.416</td>
+									<td>0.202</td>
+									<td>0.385</td>
+									<td>0.459</td>
+									<td>0.081</td>
+									<td>0.265</td>
+									<td>0.418</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+									<td>0.410</td>
+									<td>0.370</td>
+									<td>0.207</td>
+									<td>0.387</td>
+									<td>0.461</td>
+									<td>0.046</td>
+									<td>0.290</td>
+									<td>0.387</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+									<td>0.416</td>
+									<td>0.372</td>
+									<td>0.195</td>
+									<td>0.385</td>
+									<td>0.476</td>
+									<td>0.050</td>
+									<td>0.269</td>
+									<td>0.379</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+									<td>0.396</td>
+									<td>0.354</td>
+									<td>0.169</td>
+									<td>0.399</td>
+									<td>0.384</td>
+									<td>0.055</td>
+									<td>0.052</td>
+									<td>0.403</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+									<td>0.353</td>
+									<td>0.371</td>
+									<td>0.185</td>
+									<td>0.394</td>
+									<td>0.402</td>
+									<td>0.061</td>
+									<td>0.048</td>
+									<td>0.395</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+									<td>0.372</td>
+									<td>0.355</td>
+									<td>0.171</td>
+									<td>0.411</td>
+									<td>0.397</td>
+									<td>0.057</td>
+									<td>0.050</td>
+									<td>0.392</td>
+								</tr>
+								<tr class="yellowCells">
+									<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+									<td>0.364</td>
+									<td>0.363</td>
+									<td>0.187</td>
+									<td>0.409</td>
+									<td>0.389</td>
+									<td>0.060</td>
+									<td>0.054</td>
+									<td>0.405</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<h3>Fluorescence per Particle</h3>
+					<h4>MEFL/particle</h4>
+					<h5>Hour 0:</h5>
+					<table id="MEFLParticleHour0">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>0</td>
+							<td>3.67×10<sup>3</sup></td>
+							<td>6.82×10<sup>3</sup></td>
+							<td>2.79×10<sup>3</sup></td>
+							<td>1.59×10<sup>2</sup></td>
+							<td>1.82×10<sup>4</sup></td>
+							<td>1.19×10<sup>4</sup></td>
+							<td>9.55×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>4.78×10<sup>2</sup></td>
+							<td>1.82×10<sup>3</sup></td>
+							<td>4.93×10<sup>3</sup></td>
+							<td>1.66×10<sup>3</sup></td>
+							<td>1.14×10<sup>2</sup></td>
+							<td>5.85×10<sup>3</sup></td>
+							<td>3.47×10<sup>3</sup></td>
+							<td>2.87×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>6.63×10<sup>2</sup></td>
+							<td>2.39×10<sup>3</sup></td>
+							<td>5.69×10<sup>3</sup></td>
+							<td>2.26×10<sup>3</sup></td>
+							<td>4.21×10<sup>2</sup></td>
+							<td>6.63×10<sup>3</sup></td>
+							<td>4.24×10<sup>3</sup></td>
+							<td>3.18×10<sup>3</sup></td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>-4.34×10<sup>2</sup></td>
+							<td>2.01×10<sup>3</sup></td>
+							<td>4.15×10<sup>3</sup></td>
+							<td>1.45×10<sup>3</sup></td>
+							<td>2.81×10<sup>2</sup></td>
+							<td>8.36×10<sup>3</sup></td>
+							<td>4.78×10<sup>3</sup></td>
+							<td>3.22×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>4.55×10<sup>2</sup></td>
+							<td>1.97×10<sup>3</sup></td>
+							<td>5.87×10<sup>3</sup></td>
+							<td>1.12×10<sup>3</sup></td>
+							<td>7.96×10<sup>2</sup></td>
+							<td>9.04×10<sup>3</sup></td>
+							<td>5.91×10<sup>3</sup></td>
+							<td>2.26×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>5.51×10<sup>2</sup></td>
+							<td>1.79×10<sup>3</sup></td>
+							<td>5.87×10<sup>3</sup></td>
+							<td>1.07×10<sup>3</sup></td>
+							<td>5.51×10<sup>2</sup></td>
+							<td>8.44×10<sup>3</sup></td>
+							<td>6.60×10<sup>3</sup></td>
+							<td>1.76×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>5.97×10<sup>2</sup></td>
+							<td>1.76×10<sup>3</sup></td>
+							<td>5.69×10<sup>3</sup></td>
+							<td>1.09×10<sup>3</sup></td>
+							<td>5.62×10<sup>2</sup></td>
+							<td>7.58×10<sup>3</sup></td>
+							<td>3.62×10<sup>3</sup></td>
+							<td>1.89×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>3.18×10<sup>2</sup></td>
+							<td>2.39×10<sup>3</sup></td>
+							<td>6.90×10<sup>3</sup></td>
+							<td>1.63×10<sup>3</sup></td>
+							<td>1.04×10<sup>3</sup></td>
+							<td>9.82×10<sup>3</sup></td>
+							<td>9.40×10<sup>3</sup></td>
+							<td>2.03×10<sup>3</sup></td>
+						</tr>
+					</table>
+					<h5>Hour 6:</h5>
+					<table id="MEFLParticleHour6">
+						<tr>
+							<th></th>
+							<th>Negative Control</th>
+							<th>Positive Control</th>
+							<th>Device 1</th>
+							<th>Device 2</th>
+							<th>Device 3</th>
+							<th>Device 4</th>
+							<th>Device 5</th>
+							<th>Device 6</th>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 1</th>
+							<td>4.36×10<sup>1</sup></td>
+							<td>1.68×10<sup>3</sup></td>
+							<td>5.15×10<sup>3</sup></td>
+							<td>1.41×10<sup>3</sup></td>
+							<td>7.30×10<sup>1</sup></td>
+							<td>5.61×10<sup>3</sup></td>
+							<td>7.78×10<sup>2</sup></td>
+							<td>1.09×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 2</th>
+							<td>9.62×10<sup>1</sup></td>
+							<td>1.41×10<sup>3</sup></td>
+							<td>2.28×10<sup>3</sup></td>
+							<td>1.20×10<sup>3</sup></td>
+							<td>8.32×10<sup>1</sup></td>
+							<td>2.71×10<sup>3</sup></td>
+							<td>6.58×10<sup>2</sup></td>
+							<td>9.48×10<sup>2</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 3</th>
+							<td>8.15×10<sup>1</sup></td>
+							<td>1.49×10<sup>3</sup></td>
+							<td>4.18×10<sup>3</sup></td>
+							<td>1.20×10<sup>3</sup></td>
+							<td>8.29×10<sup>1</sup></td>
+							<td>4.52×10<sup>3</sup></td>
+							<td>6.67×10<sup>2</sup></td>
+							<td>9.69×10<sup>2</sup></td>
+						</tr>						
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 1, Replicate 4</th>
+							<td>8.04×10<sup>1</sup></td>
+							<td>1.53×10<sup>3</sup></td>
+							<td>4.40×10<sup>3</sup></td>
+							<td>1.20×10<sup>3</sup></td>
+							<td>8.53×10<sup>2</sup></td>
+							<td>4.35×10<sup>3</sup></td>
+							<td>6.30×10<sup>2</sup></td>
+							<td>9.89×10<sup>3</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 1</th>
+							<td>7.24×10<sup>1</sup></td>
+							<td>1.24×10<sup>3</sup></td>
+							<td>4.31×10<sup>3</sup></td>
+							<td>7.24×10<sup>2</sup></td>
+							<td>5.04×10<sup>2</sup></td>
+							<td>3.99×10<sup>3</sup></td>
+							<td>5.33×10<sup>3</sup></td>
+							<td>8.12×10<sup>2</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 2</th>
+							<td>1.01×10<sup>2</sup></td>
+							<td>1.23×10<sup>3</sup></td>
+							<td>4.08×10<sup>3</sup></td>
+							<td>7.76×10<sup>2</sup></td>
+							<td>5.11×10<sup>2</sup></td>
+							<td>3.80×10<sup>3</sup></td>
+							<td>5.62×10<sup>3</sup></td>
+							<td>8.40×10<sup>2</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 3</th>
+							<td>8.99×10<sup>1</sup></td>
+							<td>1.26×10<sup>3</sup></td>
+							<td>4.54×10<sup>3</sup></td>
+							<td>7.38×10<sup>2</sup></td>
+							<td>5.11×10<sup>2</sup></td>
+							<td>3.94×10<sup>3</sup></td>
+							<td>5.54×10<sup>3</sup></td>
+							<td>8.41×10<sup>2</sup></td>
+						</tr>
+						<tr class="yellowCells">
+							<th class="whiteCellsImportant">Colony 2, Replicate 4</th>
+							<td>1.18×10<sup>2</sup></td>
+							<td>1.55×10<sup>3</sup></td>
+							<td>5.01×10<sup>3</sup></td>
+							<td>8.87×10<sup>2</sup></td>
+							<td>6.57×10<sup>2</sup></td>
+							<td>5.05×10<sup>3</sup></td>
+							<td>7.07×10<sup>3</sup></td>
+							<td>1.03×10<sup>3</sup></td>
+						</tr>
+					</table>
+				</div>
+				<div id="Colony Forming Units">
+					<h2>Colony Forming Units per 0.1 OD600 <i>E. coli</i> Cultures</h2>
+					<div id="coloniesPerPlate">
+						<h3>Colonies per Plate</h3>
+						<h4>Positive Control</h4>
+						<table id="coloniesPerPlatePositive">
+							<tr>
+								<th></th>
+								<th>Colony 1, Replicate 1</th>
+								<th>Colony 1, Replicate 2</th>
+								<th>Colony 1, Replicate 3</th>
+								<th>Colony 2, Replicate 1</th>
+								<th>Colony 2, Replicate 2</th>
+								<th>Colony 2, Replicate 3</th>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 3</th>
+								<td>>300</td>
+								<td>>300</td>
+								<td>>300</td>
+								<td>>300</td>
+								<td>>300</td>
+								<td>>300</td>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 4</th>
+								<td>64</td>
+								<td>129</td>
+								<td>127</td>
+								<td>9</td>
+								<td>143</td>
+								<td>80</td>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 5</th>
+								<td>13</td>
+								<td>8</td>
+								<td>12</td>
+								<td>5</td>
+								<td>18</td>
+								<td>5</td>
+							</tr>
+						</table>
+						<h4>Negative Control</h4>
+						<table id="coloniesPerPlateNegative">
+							<tr>
+								<th></th>
+								<th>Colony 1, Replicate 1</th>
+								<th>Colony 1, Replicate 2</th>
+								<th>Colony 1, Replicate 3</th>
+								<th>Colony 2, Replicate 1</th>
+								<th>Colony 2, Replicate 2</th>
+								<th>Colony 2, Replicate 3</th>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 3</th>
+								<td>>300</td>
+								<td>>300</td>
+								<td>>300</td>
+								<td>157</td>
+								<td>>300</td>
+								<td>>300</td>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 4</th>
+								<td>>300</td>
+								<td>>300</td>
+								<td>92</td>
+								<td>259</td>
+								<td>5</td>
+								<td>3</td>
+							</tr>
+							<tr class="blueCells">
+								<th class="whiteCellsImportant">Dilution 5</th>
+								<td>41</td>
+								<td>33</td>
+								<td>14</td>
+								<td>11</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+						</table>
+					</div>
+					<div id="colonyFormingUnitspermL">
+						<h3>Colony Forming Units per mL</h3>
+						<h4>Positive Control</h4>
+						<table id="colonyFormingUnitspermlPoistive">
+							<tr>
+								<th></th>
+								<th>Colony 1, Replicate 1</th>
+								<th>Colony 1, Replicate 2</th>
+								<th>Colony 1, Replicate 3</th>
+								<th>Colony 2, Replicate 1</th>
+								<th>Colony 2, Replicate 2</th>
+								<th>Colony 2, Replicate 3</th>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 3</th>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 4</th>
+								<td>5.12×10<sup>7</sup></td>
+								<td>1.03×10<sup>8</sup></td>
+								<td>1.02×10<sup>8</sup></td>
+								<td>7.20×10<sup>6</sup></td>
+								<td>1.14×10<sup>8</sup></td>
+								<td>6.40×10<sup>7</sup></td>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 5</th>
+								<td>1.04×10<sup>8</sup></td>
+								<td>6.40×10<sup>7</sup></td>
+								<td>9.60×10<sup>7</sup></td>
+								<td>4.00×10<sup>7</sup></td>
+								<td>1.44×10<sup>8</sup></td>
+								<td>4.00×10<sup>7</sup></td>
+							</tr>
+						</table>
+						<h4>Negative Control</h4>
+						<table id="colonyFormingUnitspermlPositive">
+							<tr>
+								<th></th>
+								<th>Colony 1, Replicate 1</th>
+								<th>Colony 1, Replicate 2</th>
+								<th>Colony 1, Replicate 3</th>
+								<th>Colony 2, Replicate 1</th>
+								<th>Colony 2, Replicate 2</th>
+								<th>Colony 2, Replicate 3</th>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 3</th>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>1.26×10<sup>7</sup></td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 4</th>
+								<td>-</td>
+								<td>-</td>
+								<td>7.36×10<sup>7</sup></td>
+								<td>2.07×10<sup>8</sup></td>
+								<td>4.00×10<sup>6</sup></td>
+								<td>2.40×10<sup>6</sup></td>
+							</tr>
+							<tr class="yellowCells">
+								<th class="whiteCellsImportant">Dilution 5</th>
+								<td>3.28×10<sup>8</sup></td>
+								<td>2.64×10<sup>8</sup></td>
+								<td>1.12×10<sup>8</sup></td>
+								<td>8.80×10<sup>7</sup></td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="Misc. Info">
+					<h2>Miscellaneous Information</h2>
+					<p>The 96 well plate we used was clear. Some of the flourescence data might be affected due to bleeding of flourescence from certain wells to another.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copySTRIKE">
+			<div class="onTopOfCopystrike"></div>
+			<div class="bottomStuff">
+				<p>yeah we realize this is not so pretty. we're working on it.</p>
+				<p>contact us at <a href="mailto:umarylandigem@gmail.com">umarylandigem@gmail.com</a></p>
+			</div>
+		</div>	
+	</body>
+</html>
+
+<style>
+	/* Common CSS that will exist throughout the wiki - will probably move to its own separate CSS file */
+	/* Standard important stuff */
+	@font-face {
+		font-family: "Exo";
+		src: url("http://2018.igem.org/wiki/images/4/45/T--UMaryland--Exo-Regular.ttf");
+		font-weight: 900;
+	}
+	@font-face {
+		font-family: "Lato";
+		src: url("http://2018.igem.org/wiki/images/d/dc/T--UMaryland--Lato-Regular.ttf");
+		font-weight: 300;
+	}
+	.float_left {
+		float: left;
+	}
+	.float_right {
+		float: right;
+	}
+	.container {
+		max-width: 1250px;
+		margin: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.hidden {
+		display: none;
+	}
+	a {
+		text-decoration: inherit;
+		color: inherit;
+	}
+	/* Navbar Stuff */
+	.NavBar {
+		height: 75px;
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+		background-color: gray;
+		position: fixed;
+		width: 100%;
+		top: 0;
+	}
+	#logocircleborder {
+		height: 120px;
+		width: 120px;
+		background-color: gray;
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+		border-radius: 60px;
+		position: relative;
+	}
+	#removeshadowonnavbar {
+		height: 75px;
+		background-color: inherit;
+		width: 140px;
+		position: relative;
+		left: -10px;
+	}
+	.NavBarContainer {
+		max-width: 1500px;
+		margin: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.NavBarOptions {
+		display: inline;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		/* text-transform: uppercase; */
+		font-size: 20px;
+		padding-left: 15px;
+		position: relative;
+		top: 15px;
+		text-transform: uppercase;
+	}
+	.NavBarOptionsActive {
+		color: white;
+	}
+	/* Dropdown stuff */
+	.Dropdown {
+		font-size: 16px;
+		position: absolute;
+		list-style-type: none;
+		color: lightgray;
+		padding: 10px 40px 10px 16px;
+		left: 20px;
+		top: 30px;
+		background-color: mediumpurple;
+		border: solid purple 1px;
+		line-height: 1.25;
+	}
+	.DropdownDivider {
+		height: 1px;
+		margin: 8px 0;
+		background-color: lightgray;
+	}
+	/* Title Stuff */
+	.TitleRegion {
+		text-align: right;
+		color: white;
+		padding-top: 150px;
+		margin-top: 75px;
+		background-image: url("http://2018.igem.org/wiki/images/7/77/T--UMaryland--agarPatternEight.png");
+		font-family: 'Exo', sans-serif;
+	}
+	.containerTitle {
+		margin-right: 25px;
+		padding-right: 25px;
+		border-right: 5px solid white;
+	}
+	.TitleText {
+		font-size: 100px;
+		text-transform: uppercase;
+	}
+	.SubtitleText {
+		font-size: 50px;
+	}
+	.TitleFade {		
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+		margin-top: 100px;
+		height: 100px;
+	}
+	/* Body page stuff */
+	.meatSection {
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+	}
+	/* CopySTRIKE */
+	.onTopOfCopystrike {
+		height: 100px;
+	}
+	.bottomStuff {
+		border-top: 1px solid darkgray;
+		color: grey ;
+		background-color: black;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+</style>
+
+<style>
+	/* Special stuff just for this page */
+@font-face {
+	font-family: "Exo";
+	src: url("http://2018.igem.org/wiki/images/4/45/T--UMaryland--Exo-Regular.ttf");
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("http://2018.igem.org/wiki/images/d/dc/T--UMaryland--Lato-Regular.ttf");
+	font-weight: 300;
+}
+	table {
+		border: 1px solid black;
+		border-collapse: collapse;
+		font-style: "Lato";
+	}
+	th, td {
+		border: 1px solid black;
+		padding: 10px;		
+		text-align: center;
+		font-weight: normal;
+	}
+	.yellowCells {
+		background-color: rgba(255,204,0,0.1)
+	}
+	.blueCells {
+		background-color: rgba(0,204,255,0.1)		
+	}
+	.whiteCellsImportant {
+		background-color: rgba(255,255,255,1);
+		important;
+	}
+	
+</style>
